@@ -5,20 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        
+        .caixa {
+            width: 300px;
+        }
+        .margem {
+            margin-right: 4px;
+        }
     </style>
     <title>Document</title>
 </head>
 <body>
     <h1>Carros Elétricos</h1>
         <form action="cadastro.php">
-            <p>Nome completo:</p>
-            <p><input type="text" name="nome" id="nome" placeholder="Digite seu nome completo"></p>
-            <p>Modelo de carro elétrico favorito:</p>
-            <p><input type="text" name="nome" id="nome" placeholder="Ex: Tesla Model 3"></p>
-            <p>Crie uma senha de acesso:</p>
-            <p><input type="text" name="nome" id="nome" placeholder="Mínimo 6 caracteres"></p>
-            <p><input type="submit"><input type="reset" value="Limpar" ></p>
+            Nome completo:<br>
+            <input class="caixa" type="text" name="nome" id="nome" placeholder="Digite seu nome completo"><br><br>
+            Modelo de carro elétrico favorito:<br>
+            <input class="caixa" type="text" name="nome" id="nome" placeholder="Ex: Tesla Model 3"><br><br>
+            Crie uma senha de acesso:<br>
+            <input type="text" name="nome" id="nome" placeholder="Mínimo 6 caracteres" minlength="6"><br><br>
+            <input class="margem"  type="submit"><input type="reset" value="Limpar" >
         </form>
 </body>
 </html>
